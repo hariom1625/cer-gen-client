@@ -1,0 +1,4 @@
+[[redirects]]
+    from = "http://localhost:5000/"
+    to = "https://radiant-fortress-99665.herokuapp.com/"
+    status = 200
