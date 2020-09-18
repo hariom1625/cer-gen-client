@@ -17,7 +17,7 @@ class App extends React.Component {
 
       createAndDownloadPdf = () => {
 
-            axios.post('/create-pdf', this.state).then(() => axios.get('https://radiant-fortress-99665.herokuapp.com/fetch-pdf', {responseType: 'blob'})).then((res) => {
+            axios.post('https://radiant-fortress-99665.herokuapp.com/create-pdf', this.state).then(() => axios.get('https://radiant-fortress-99665.herokuapp.com/fetch-pdf', {responseType: 'blob'})).then((res) => {
                   const pdfBlob = new Blob([res.data], {type: 'application/pdf'});
 
                   saveAs(pdfBlob, 'newPdf.pdf');
