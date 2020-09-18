@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import {saveAs} from 'file-saver';
-import './App.css';
 
 class App extends React.Component {
       state = {
